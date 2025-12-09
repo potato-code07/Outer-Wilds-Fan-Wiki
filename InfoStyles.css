@@ -1,0 +1,124 @@
+@font-face {
+    font-family: 'Thicc';
+    src: url(Font/itcsg-heavy.otf);
+}
+
+@font-face {
+    font-family: 'Thin';
+    src: url(Font/itcsg-light.otf);
+}
+
+@font-face {
+    font-family: 'Regular';
+    src: url(Font/itcsg-regular.otf);
+}
+
+@font-face {
+    font-family: 'Black';
+    src: url(Font/itcsg-black.otf);
+}
+
+@font-face {
+    font-family: 'SThicc';
+    src: url(Font/itcsg-extra-bold.otf);
+}
+
+@font-face {
+    font-family: 'SpaceMono';
+    src: url(Font/SpaceMono-Regular.ttf);
+}
+
+body, ul, li, a{
+    margin: 0;
+    padding: 0;
+    font-family: 'Regular';
+    background-color: black;
+}
+
+p {
+    font-family: 'Regular';
+    color: white;
+}
+
+h1, h2, ul, li, a {
+    font-family: 'Thicc';
+    color:#ff7d25;
+}
+
+#image {
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+    margin-top: -10%;
+}
+.container {
+    text-align: center;
+    font-size: 2em;
+}
+h1 {
+    margin-top: -10%;
+    margin-bottom: -10%;
+}
+
+.container1 {
+    padding: 10%;
+    font-size: 1.5em;
+}
+
+.desc {
+    padding-left: 10%;
+    font-size: 1.5em;
+}
+
+.images{
+    text-align: center;
+    margin: 80px 0;
+    white-space: nowrap;
+}
+.images li{
+    list-style-type: none;
+    width: 40%;
+    margin: 20px 5%;
+    display: inline-block;
+    position: relative;
+}
+.images li img{
+    max-width: 100%;
+}
+.images li:hover{
+    top: -4px;
+}
+
+footer{
+    background: #ff7d25;
+    color: black;
+    padding: 10px;
+    text-align: center;
+}
+
+@media screen and (max-width: 500px) {
+    #image {
+        transform: scale(150%);
+        margin-top: 10%;
+        margin-bottom: 15%;
+    }
+    .images li {
+        display: block;
+        width: 100%;
+        margin-top: 15%;
+    }
+    #imgyo {
+        margin-left: -10%;
+    }
+    #planetname {
+        font-size: 1.6em;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    #image {
+        transform: scale(200%);
+        margin-top: 10%;
+        margin-bottom: 15%;
+    }
+}

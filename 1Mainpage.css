@@ -1,0 +1,733 @@
+@font-face {
+    font-family: 'Thicc';
+    src: url(Font/itcsg-heavy.otf);
+}
+
+@font-face {
+    font-family: 'Thin';
+    src: url(Font/itcsg-light.otf);
+}
+
+@font-face {
+    font-family: 'Regular';
+    src: url(Font/itcsg-regular.otf);
+}
+
+@font-face {
+    font-family: 'Black';
+    src: url(Font/itcsg-black.otf);
+}
+
+@font-face {
+    font-family: 'SThicc';
+    src: url(Font/itcsg-extra-bold.otf);
+}
+
+@font-face {
+    font-family: 'SpaceMono';
+    src: url(Font/SpaceMono-Regular.ttf);
+}
+
+body, ul, li, a{
+    margin: 0;
+    padding: 0;
+    font-family: 'Regular';
+    background-color: black;
+}
+
+h1, h2 {
+    font-family: 'Thicc';
+}
+
+header{
+    background-color: black;
+    padding: -20px 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+
+header h2{
+    color: #ff7d25;
+    border: 6px dashed #ff7d25;
+    padding: 6px 12px;
+    display: inline-block;
+    border-radius: 30px;
+}
+
+.banner{
+    position: relative;
+    top: -100px;
+    margin-bottom: -100px;
+}
+
+.banner video{
+    max-width: 100%;
+}
+
+nav{
+    background-color: black;
+    padding: 30px;
+    position: sticky;
+    top: 90px;
+    z-index: 1;
+}
+
+nav ul{
+    max-width: 1200px;
+    margin: 10px;
+    text-align: center;
+}
+nav li{
+    width: 30%;
+    display: inline-block;
+    font-size: 24px;
+    vertical-align: middle;
+}
+
+nav li a{
+    text-decoration: none;
+    color: #ff7d25;
+    font-family: 'Sthicc';
+}
+nav li a:hover{
+    text-decoration: underline; 
+}
+
+main{
+    max-width: 100%;
+    width: 1200px;
+    margin: 80px auto;
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+.main-nav {
+    padding-left: 7%;
+}
+
+#hiddenhr {
+    display: none;
+}
+
+article h2{
+    color: #ff7d25;
+    font-size: 48px;
+}
+article p{
+    line-height: 2em;
+    color: #e0d9d9
+}
+article p::first-line{
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+section.join{
+    background: black;
+    text-align: center;
+    padding: 60px 20px;
+    color: #4b4b4b;
+}
+
+.join h2{
+    font-size: 32px;
+}
+form input{
+    background-color: #010101;
+    margin: 20px 10px;
+    padding: 10px 30px;
+    font-size: 24px;
+    border: 4px solid #ff7d25;
+    border-radius: 28px;
+}
+
+form input::placeholder{
+    font-family: 'Regular';
+}
+footer{
+    background: #ff7d25;
+    color: black;
+    padding: 10px;
+    text-align: center;
+}
+
+form input:focus{
+    border: 4px dashed #ff7d25;
+    outline: none;
+    font-family: 'Regular';
+}
+
+form input:valid{
+    border: 4px solid #71d300;
+    color: black;
+    font-family: 'Regular';
+}
+/*form input:invalid{
+    border: 4px solid #f63232;
+}*/
+section.join p::first-letter{
+    font-size: 1.5em;
+}
+p::selection{
+    background-color: #ff7d25;
+    color: white;
+}
+p::after{
+    content: '.';
+}
+p {
+    font-size: 20px;
+}
+
+#centerdis {
+    text-align: center;
+}
+
+#color {
+    color: #ff7d25;
+    font-size: 25;
+    
+}
+/*For Banner*/
+
+/*For Solar System*/
+
+div .bodystandee {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+div .solar_system{
+    position: relative;
+    height: 100vh;
+    background-color: black;
+}
+
+.embertwin_orbit,
+.timberhearth_orbit,
+.brittlehollow_orbit,
+.giantsdeep_orbit,
+.darkbramble_orbit, 
+.interloper_orbit {
+    border: 1px dotted white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background: transparent;
+}
+
+.sun{
+    width: 65px;
+    height: 65px;
+    background: url("Images/The Sun.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #DF3237;
+    border-radius: 70%;
+    box-shadow: -4px 2px 56px orange;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.sunstation {
+    height: 3px; 
+    width: 3px;
+    border-radius: 50%;
+    background: linear-gradient(gold);
+    position: absolute;
+    top: 45%;
+    left: 45%;
+    transform: translate (-50%, -50%);
+    animation: orbit 35s linear infinite;
+}
+
+@keyframes orbit {
+    from {
+        transform: rotate(0deg) translateX(40px) rotate(0deg); 
+    }
+    to {
+        transform: rotate(360deg) translate(40px) rotate(-360deg);
+    }
+}
+
+.interloper_orbit {
+    width: 350px;
+    height: 350px;
+    left: -280px;
+    top: -140px;
+    transform: scaleY(0.5);
+    transform-origin: center center;
+}
+
+.interloper {
+    height: 20px; 
+    width: 20px;
+    background: url("Images/Interloper.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 47%;
+    left: 47%;
+    transform: translate (-50%, -50%);
+    animation: orbit0 480s linear infinite;
+    z-index: 1;
+}
+
+@keyframes orbit0 {
+    from {
+        transform: rotate(0deg) translateX(175px) rotate(0deg); 
+    }
+    to {
+        transform: rotate(360deg) translate(175px) rotate(-360deg);
+    }
+}
+
+.embertwin_orbit {
+    width: 150px;
+    height: 150px;
+}
+
+.embertwin {
+    height: 20px; 
+    width: 20px;
+    background: url("Images/Hourglass Twins.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 46%;
+    left: 46%;
+    transform: translate (-50%, -50%);
+    animation: orbit1 110s linear infinite;
+}
+@keyframes orbit1 {
+    from {
+        transform: rotate(0deg) translateX(75px) rotate(0deg); 
+    }
+    to {
+        transform: rotate(360deg) translate(75px) rotate(-360deg);
+    }
+}
+
+.timberhearth_orbit{
+    height: 210px;
+    width: 210px;
+}
+
+.timberhearth {
+    width: 8px;
+    height: 8px;
+    background: url("Images/Timber Hearth.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 48%;
+    left: 48%;
+    transform: translate(-50%, -50%);
+    animation: orbit2 250s linear infinite;
+    z-index: 1;
+}
+
+@keyframes orbit2 {
+    from {
+        transform: rotate(0deg) translateX(105px) rotate(0deg); 
+    }
+    to {
+        transform: rotate(360deg) translate(105px) rotate(-360deg);
+    }
+}
+
+.attlerock_orbit {
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    border: 0.8px dotted #dd9;
+    position: relative;
+    top: -125%;
+    left: -125%;
+    background: transparent;
+}
+
+.attlerock {
+    width: 5px;
+    height: 5px;
+    background: url("Images/Attlerock.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute; 
+    top: 43%;
+    left: 43%;
+    transform: translate(-50%, -50%);
+    animation: attlerock-orbit 175s linear infinite;
+}
+
+@keyframes attlerock-orbit {
+    from {
+        transform: rotate(0deg) translateX(13px) rotate(0deg); 
+    }
+    to {
+        transform: rotate(360deg) translate(13px) rotate(-360deg);
+    }
+}
+
+.brittlehollow_orbit{
+    height: 300px;
+    width: 300px;
+}
+/* for image url format
+.brittlehollow {
+    height: 34px;
+    width: 34px;
+    background: url("picture");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 44%;
+    left: 44%;
+    transform: translate(-50%, -50%);
+}
+*/
+.brittlehollow {
+    height: 12px;
+    width: 12px;
+    background: url("Images/Brittle Hollow.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 47%;
+    left: 47%;
+    transform: translate(-50%, -50%);
+    animation: orbit3 397s linear infinite;
+} 
+
+@keyframes orbit3 {
+    from {
+        transform: rotate(0deg) translateX(150px) rotate(0deg); 
+    }
+    to {
+        transform: rotate(360deg) translate(150px) rotate(-360deg);
+    }
+}
+
+.hollowslantern_orbit {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: 0.8px dotted #dd9;
+    position: relative;
+    top: -40%;
+    left: -40%;
+    background: transparent;
+}
+
+.hollowslantern {
+    width: 5px;
+    height: 5px;
+    background: url("Images/Hollow's Lantern.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: -4px 2px 56px #fff;
+    position: absolute; 
+    top: 42%;
+    left: 42%;
+    transform: translate(-50%, -50%);
+    animation: hollowslantern-orbit 160s linear infinite;
+}
+
+@keyframes hollowslantern-orbit {
+    from {
+        transform: rotate(0deg) translateX(10px) rotate(0deg); 
+    }
+    to {
+        transform: rotate(360deg) translate(10px) rotate(-360deg);
+    }
+}
+
+.giantsdeep_orbit{
+    height: 400px;
+    width: 400px;
+}
+.giantsdeep {
+    height: 23px;
+    width: 23px;
+    background: url("Images/Giant's Deep.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 47%;
+    left: 47%;
+    transform: translate(-50%, -50%);
+    animation: orbit4 650s linear infinite;
+}
+@keyframes orbit4 {
+    from {
+        transform: rotate(0deg) translateX(200px) rotate(0deg); 
+    }
+    to {
+        transform: rotate(360deg) translate(200px) rotate(-360deg);
+    }
+}
+
+.quantummoon_orbit {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 0.8px dotted #dd9;
+    position: relative;
+    top: -57%;
+    left: -57%;
+    background: transparent;
+}
+
+.quantummoon {
+    width: 5px;
+    height: 5px;
+    background: url("Images/Quantum Moon.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: -4px 2px 56px #fff;
+    position: absolute; 
+    top: 43%;
+    left: 43%;
+    transform: translate(-50%, -50%);
+    animation: quantummoon-orbit 175s linear infinite;
+}
+@keyframes quantummoon-orbit {
+    from {
+        transform: rotate(0deg) translateX(24px) rotate(0deg); 
+    }
+    to {
+        transform: rotate(360deg) translate(24px) rotate(-360deg);
+    }
+}
+
+.darkbramble_orbit{
+    height: 500px;
+    width: 500px;
+}
+.darkbramble {
+    height: 23px;
+    width: 23px;
+    background: url("Images/Darkbramble.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 47%;
+    left: 47%;
+    transform: translate(-50%, -50%);
+    animation: orbit5 900s linear infinite;
+}
+
+@keyframes orbit5 {
+    from {
+        transform: rotate(0deg) translateX(250px) rotate(0deg); 
+    }
+    to {
+        transform: rotate(360deg) translate(250px) rotate(-360deg);
+    }
+}
+
+.solar_system {
+    margin-bottom: 200px;
+}
+
+/*For text with anchor*/
+.interloper,
+.timberhearth,
+.attlerock,
+.brittlehollow,
+.hollowslantern,
+.giantsdeep,
+.quantummoon,
+.darkbramble {
+    z-index: 1;
+}
+
+.interloper span{
+    position: fixed;
+    transform: scaleY(2);
+    margin-left: 15px;
+    margin-top: -15px;
+    font-size: 0.5em;
+    white-space: nowrap;
+    font-family: 'SpaceMono';
+    z-index: 1;
+}
+
+span {
+    position: fixed;
+    margin-left: 15px;
+    margin-top: -15px;
+    font-size: 0.5em;
+    white-space: nowrap;
+    font-family: 'SpaceMono';
+    z-index: 2;
+}
+/*End For Solar system*/
+
+
+.row {
+    top: 500%;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.column {
+    width: 500px;
+    position: relative;
+    top: 50px;
+}
+
+.content1 {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    transition: 0.6;
+}
+.content1:hover {
+    opacity: 1;
+}
+.content1 h1 {
+    font-size: 300%;
+    color: #ff7d25;
+    margin-bottom: 15px;
+    text-align: center;
+    font-family: 'Regular';
+}
+
+.content1 h1:hover {
+    text-decoration: underline;
+}
+
+.row {
+    margin-top: 300px;
+    margin-bottom: 200px;
+}
+.column {
+    float: left;
+    width: 30%;
+    padding: 5px;
+}
+
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+/*Responsive Styles*/
+
+@media screen and (max-width: 1400px){
+    nav li {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 1000px){
+     #hiddenhr {
+        display: block;
+    }
+    nav ul{
+        text-align: left;
+        padding: 5%;
+        margin-bottom: -10%;
+    }
+    .main-nav ul li {
+        font-size: 2em;
+    }
+    nav {
+        position: static;
+    }
+}
+
+@media screen and (max-width: 700px){
+
+    video {
+        width: 100%;
+        height: 65%;
+        display: block;
+    }
+
+    .banner{
+    position: relative;
+    top: 0px;
+    margin-bottom: 0px;
+    }
+
+    div .solar_system {
+        margin: 0 auto;
+        transform: scale(0.7);
+    }
+    .content1 h1 {
+    display: inline-block;
+    font-size: 150%;
+    margin-bottom: 15px;
+    text-align: center;
+    }
+    .row {
+        margin-top: 10px;
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (max-width: 470px){
+    nav li{
+        width: 50%;
+        display: inline-block;
+        font-size: 24px;
+        vertical-align: middle;
+    }
+    .main-nav {
+        margin-top: -25%;
+        margin-bottom: -30%;
+    }
+    .bodystandee {
+        margin-top: -50%;
+        margin-bottom: -35%;
+        transform: scale(71%);
+    }
+    input {
+        transform: scale(75%);
+    }
+    header h2{
+    color: #ff7d25;
+    border: 6px dashed #ff7d25;
+    padding: 6px 12px;
+    display: inline-block;
+    border-radius: 30px;
+}
+}
+
+@media screen and (max-width: 360px){
+    form {
+        margin-left: -25%;
+    }
+}
+
+
