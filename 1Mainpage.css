@@ -113,7 +113,7 @@ main{
 
 article h2{
     color: #ff7d25;
-    font-size: 48px;
+    font-size: 3.5em;
 }
 article p{
     line-height: 2em;
@@ -642,11 +642,20 @@ span {
     clear: both;
 }
 
+.bodystandee {
+    margin-bottom: -10%;
+    margin-top: -5%;
+    padding: 0;
+}
 /*Responsive Styles*/
 
 @media screen and (max-width: 1400px){
     nav li {
         font-size: 20px;
+    }
+    .bodystandee {
+        margin-top: 7%;
+        transform: scale(120%);
     }
 }
 
@@ -668,6 +677,9 @@ span {
     header h2 {
         font-size: 2em;
         margin: 5%;
+    }
+    .bodystandee {
+        transform: scale(100%);
     }
 }
 
