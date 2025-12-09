@@ -82,7 +82,7 @@ header h2{
 }
 .slider video{
     margin-top: 50px;
-    padding-left: 180px;
+    padding-left: 20%;
     align-content: center;
     margin-right: 5000px;
     width: 100%;
@@ -130,9 +130,8 @@ header h2{
     text-decoration: none;
 }
 
-.slider a:hover {
+#playtogether:hover {
     text-decoration: underline;
-    text-decoration-color: black;
 }
 
 .slider button {
@@ -152,6 +151,16 @@ footer{
 footer p {
     font-size: 35px;
     color: white;
+}
+
+.slider {
+    scrollbar-color: orange black;
+    overflow-y: hidden;
+}
+
+video {
+    margin-bottom: -10%;
+    margin-left: 10%;
 }
 
 @media screen and (max-width: 700px){
